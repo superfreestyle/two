@@ -1,0 +1,212 @@
+.background{
+	position:fixed;
+	width:1920px;
+	height:600px;
+	top:100px;
+}
+#reg-form{
+	position:absolute;
+	top:125px;
+	left:1030px;
+	width:450px;
+	height:570px;
+	border-radius:5px;
+	background: rgba(255, 255, 255, 0.45) ;
+}
+#reg-form:hover{
+    box-shadow:
+        0 0px 7px 0 #b31bf8;
+        -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+#reg-form table{
+	position:relative;
+	left:20px;
+	top:-30px;
+}
+h1{
+    color: #6c6c6c;
+	font-family:Microsoft YaHei;
+	position:relative;
+	left:160px;
+	top:-10px;
+}
+h1:hover{
+	color:#000;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+#reg-form td{
+	position:relative;
+}
+label{
+	display:inline-block;
+	line-height:30px;
+	font-size:14px;
+	width:120px;
+}
+.item{
+	border:0;
+	text-align:right;
+	font-size:16px;
+	width:80px;
+	color:#666;
+	border-radius:5px;	
+	margin-top:10px;
+	font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+label,.item{
+	height:30px;
+}
+h1,.item,.input,#ageinput,#submit,#reset{
+	-o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+.input{
+	width: 290px;
+    height: 35px;
+    background: rgba(45,45,45,.15);
+    border-radius: 6px;
+    border: 1px solid #3d3d3d; 
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding-left:10px;
+    position:relative;
+    margin-top:10px;
+    margin-left:10px;
+}
+#sex1,#sex2{
+	margin-top:15px;
+	margin-left:10px;
+}
+#ageinput{
+	width:100px;
+	height:35px;
+	border-radius:6px;
+	border:0;
+	background: rgba(45,45,45,.15);
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	padding:0 35px;
+	appearance:none;   
+  	-moz-appearance:none;   
+  	-webkit-appearance:none;  
+  	background: url("") no-repeat scroll rightright center transparent; 
+  	margin-top:10px;
+  	margin-left:10px;   
+}
+.input:hover, #ageinput:hover{
+	outline: none;
+	box-shadow:
+        0 2px 3px 0 #f50041 inset,
+        0 2px 4px 0 #b31bf8;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.input:focus, #ageinput:focus{
+	outline: none;
+    box-shadow:
+        0 2px 3px 0 #b31bf8 inset,
+        0 2px 4px 0 #f50041;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+option{
+	overflow-y:auto;
+	background: #74BBD1;
+	color: #fff;
+	text-align:center;
+}
+
+.buf_regist,.buf_reset{
+	width:150px;
+	height:42px;
+	margin-top:-10px;
+	border-radius:5px;
+	color:#fff;
+	background:#10eafe;
+	border:0;
+	border-radius:5px;
+	font-size:18px;
+	font-weight:bold;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	background:-webkit-gradient(linear, 0% 0%, 0% 80%,from(#c2fffc), to(#10eafe));
+	background: linear-gradient(#10eafe,#08b7fd);
+}
+.buf_regist{
+	position:relative;
+	left:55px;
+}
+.buf_reset{
+	position:relative;
+	left:95px;
+}
+.buf_regist:hover,.buf_reset:hover{
+	outline: none;
+    box-shadow:
+        0 0px 7px 0 #545454;
+        -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.buf_regist:active,.buf_reset:active{
+	outline: none;
+	background:#0be9fe;
+    box-shadow:
+        0 0px 7px 0 #545454;
+        -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.buf_regist:focus,.buf_reset:focus{
+	outline: none;
+	background:#0be9fe;
+    box-shadow:
+        0 0px 7px 0 #fff;
+        -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+a{
+	text-decoration:none;
+	font:15px/1.5 "Microsoft YaHei";
+	color:#6c6c6c;
+	position:relative;
+	top:10px;
+	left:280px;
+}
+.footer-hd{
+	width:100%;
+	position:fixed;
+	top:750px;
+    color: #6C6C6C;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+.footer-hd a{
+	text-decoration:none;
+	color: #6C6C6C;
+}
+.footer-hd b{
+	margin: 0 3px;
+    font-weight: 400;
+    color: #DDD;
+}

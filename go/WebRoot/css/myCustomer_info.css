@@ -1,0 +1,253 @@
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+body{background:url(../image/background.jpg);margin:0;}
+a{text-decoration:none;}
+#header{
+	position:absolute;
+	border:none;
+    width: 100%;
+    height: 35px;
+    background: #f5f5f5;
+    font: 13px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+#header #op_regist{
+	position:absolute;
+	left:450px;
+	top:8px;
+	white-space:nowrap;
+}
+#header #usermsg{
+	position:absolute;
+	left:1200px;
+	top:8px;
+	white-space:nowrap;
+}
+#header a{
+	color:#6C6C6C;
+}
+#header a:hover{
+	color:#F246AA;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+#usermsg a,#usermsg b{
+	margin-left:10px;
+}
+#usermsg b{
+	font-weight:400;
+    color: #DDD;
+}
+#div_scan{
+	width:700px;
+	height:50px;
+	position:absolute;
+	left:700px;
+	top:65px;
+}
+.scan_input{
+	width:445px;
+	height:38px;
+	position:absolute;
+    padding-left: 5px;
+    border: solid #60C4FD;
+    border-width: 3px 0 3px 3px;
+    font-size: 14px;
+    color: #999;
+    outline: 0 none;
+}
+.scan_input:hover{
+	box-shadow:0px 0px 7px 0 #60C4FD;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.scan_input:focus{
+	box-shadow:0px 0px 7px 0 #60C4FD;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.scan_btn{
+	width: 100px;
+    height: 38px;
+    position:absolute;
+    left:445px;
+    border: 0 none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 0px;
+    background: #60C4FD;
+    cursor: pointer;
+}
+#div_user:hover,#div_category:hover{
+	box-shadow:0px 0px 7px 0 #b31bf8;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+#div_user{
+	background:#fff;
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:290px;
+	top:140px;
+	text-align:center;
+}
+#div_user img{
+	margin-top:5px;
+	border-radius:50%;
+	width:150px;
+	height:150px;
+	cursor:pointer;
+}
+#username{
+	font-size:17px;
+	color:#F246AA;
+	font-weight:bold;
+	font-family:宋体;
+	letter-spacing:-1px;
+}
+#div_customermsg{
+	background:#fff;
+	width:900px;
+	height:700px;
+	position:absolute;
+	top:140px;
+	left:500px;
+}
+#div_customermsg hr{
+	border-color:rgba(23,21,21,0.08);
+}
+#div_customermsg p{
+	position:relative;
+	left:20px;
+	color:#8D7AFB;
+}
+table{
+	position:relative;
+	margin:10px auto;
+}
+th{
+	font-weight:normal;
+	padding:20px 0px;
+	text-align:right;
+}
+td input{
+	width:300px;
+	height:40px;
+	margin-left:20px;
+	font-size:medium;
+	color:#999;
+	padding-left:5px;
+}
+input[type="radio"]{
+	width:10px;
+	height:10px;
+}
+select{
+	width:80px;
+	height:40px;
+	margin-left:20px;
+	padding-left:15px;
+	font-size:14px;
+}
+#div_customermsg button{
+	width:120px;
+	height:35px;
+	position:relative;
+	margin:60px 390px;
+	border:0px;
+	color:#fff;
+	background:rgba(141,122,251,0.90);
+	border-radius:6px;
+}
+#div_customermsg button:hover{
+	background:#7a7efb;
+}
+#div_index{
+	width:60px;
+	height:240px;
+	position:fixed;
+	left:1430px;
+	top:140px;
+	box-shadow:0 0 7px #A9A9A9;
+	background:#fff;
+	text-align:center;
+}
+#div_index div{
+	width:60px;
+	height:60px;
+	text-align:center
+}
+#div_index img{
+	width:60px;
+	height:60px;
+}
+#div_index a{
+	width:40px;
+	height:50px;
+	position:absolute;
+	font-size:16px;
+}
+#div_index hr{
+	position:absolute;
+	margin:0 9px;
+}
+.index1_a{
+	top:0px;
+	left:10px;
+	padding-top:20px;
+	color:FF0055;
+}
+.index2_a{
+	top:70px;
+	left:10px;
+	color:#8D7AFB;
+}
+.index3_a{
+	top:130px;
+	left:10px;
+	color:#A8C001;
+}
+.index4_a{
+	top:190px;
+	left:10px;
+	color:#A2745B;
+}
+#div_index a:hover{
+	color:#fff;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.footer-hd{
+	width:100%;
+	background:#fff;
+	height:140px;
+	position:absolute;
+	top:900px;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+.footer-hd a{
+	text-decoration:none;
+	color: #6C6C6C;
+}
+.footer-hd b{
+	margin: 0 3px;
+    font-weight: 400;
+    color: #DDD;
+}
+center{
+	position:relative;
+	margin:-15px auto;
+	color:red;
+}

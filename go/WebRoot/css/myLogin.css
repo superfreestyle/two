@@ -1,0 +1,125 @@
+.background{
+	position:fixed;
+	width:1920px;
+	height:600px;
+	top:100px;
+}
+.form-div {
+	position:fixed;
+	margin: 180px 1050px ;
+	width:400px;
+	height:420px;
+	border-radius:5px;
+	background: rgba(255, 255, 255, 0.45)  ;
+	text-align:center;
+}
+.form-div:hover{
+	box-shadow:0 0px 7px 0 #b31bf8;
+}
+h1{
+	color: #6c6c6c;
+	font-family:Microsoft YaHei;
+}
+h1:hover{
+	color:#000;
+	-o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.input {
+    width: 300px;
+    height: 42px;
+    background: rgba(45,45,45,.15);
+    border-radius: 6px; 
+    border: 0px solid rgba(255,255,255,.15);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding-left:10px;
+}
+#password{
+	margin-top:20px;
+}
+.input:hover{
+	outline: none;
+	box-shadow:
+        0 2px 3px 0 #f50041 inset,
+        0 2px 7px 0 #b31bf8;
+}
+.input:focus{
+	outline: none;
+    box-shadow:
+        0 2px 3px 0 #b31bf8 inset,
+        0 2px 7px 0 #f50041;
+}
+.submit,.forgive{
+	width:310px;
+	height:42px;
+	margin-top:30px;
+	border-radius:5px;
+	color:#fff;
+	background:#10eafe;
+	border:0;
+	border-radius:5px;
+	font-size:19px;
+	font-weight:bold;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	background:-webkit-gradient(linear, 0% 0%, 0% 80%,from(#c2fffc), to(#10eafe));
+	background: linear-gradient(#10eafe,#08b7fd);
+	text-align: center;
+}
+.forgive{
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.submit:hover,.forgive:hover{
+	outline: none;
+    box-shadow:
+        0 0px 7px 0 #545454;
+}
+.submit:active,.forgive:active{
+	outline: none;
+	background:#0be9fe;
+    box-shadow:
+        0 0px 7px 0 #545454;
+}
+
+.form-div,.input,.submit,.forgive{
+	-o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+#regist{
+	text-decoration:none;
+	font:15px/1.5 "Microsoft YaHei";
+	color:#6c6c6c;
+	position:relative;
+	top:20px;
+	left:120px;
+}
+.form-div p{
+	color:red;
+	margin-top:30px;
+}
+.footer-hd{
+	width:100%;
+	position:fixed;
+	top:750px;
+    color: #6C6C6C;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+    white-space:nowrap;
+    text-align:center;
+}
+.footer-hd a{
+	text-decoration:none;
+	color: #6C6C6C;
+}
+.footer-hd b{
+	margin: 0 3px;
+    font-weight: 400;
+    color: #DDD;
+}
