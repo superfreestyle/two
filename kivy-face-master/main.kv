@@ -1,0 +1,313 @@
+<Label>:
+    font_name:'droid.ttf'
+<TextInput>:
+    font_name:'droid.ttf'
+<Dutton@Button>:
+    font_name:'droid.ttf'
+
+
+<FirstLayout>:
+    orientation:'vertical'
+    canvas.before:
+        Color:
+            rgba: 42, 36, 48, 0
+        Rectangle:
+            pos:self.pos
+            size:self.size
+    Label:
+    BoxLayout:
+        height: 100
+        orientation: 'horizontal'
+        padding: 5
+        spacing: 75
+        size_hint: (1, None)
+        Button:
+            text: 'Open Camera'
+            background_normal:'images/src/but_blue.png'
+            background_down:'images/src/but_blue_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                carousel = root.parent.parent
+                carousel.load_slide(carousel.slides[1])
+
+        Button:
+            text: 'Count'
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            background_normal:'images/src/but_red.png'
+            background_down:'images/src/but_red_down.png'
+            border: (2, 2, 2, 2)
+            on_release:
+                carousel = root.parent.parent
+
+    Label:
+    BoxLayout:
+        size_hint: (1, None)
+        height:'50dp'
+        Label:
+        Label:
+        Label:
+        Label:
+
+<OpenLayout>:
+    orientation:'vertical'
+    padding:(21,21)
+    canvas.before:
+        Color:
+            rgba: 42, 36, 48, 0
+        Rectangle:
+            pos:self.pos
+            size:self.size
+
+    BoxLayout:
+        height: 100
+        orientation: 'horizontal'
+        padding: 5
+        spacing: 75
+        size_hint: (1, None)
+
+        Dutton:
+            text:'Change'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                camera.index = 1 if camera.index == 0 else 0
+
+        Dutton:
+            text:'Count'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                carousel = root.parent.parent
+                carousel.load_slide(carousel.slides[2])
+    CV2mera:
+        index:0
+        save:False
+        sign:False
+        train:False
+        id:camera
+        play: True
+        resolution: (640,480)
+
+
+    BoxLayout:
+        height: 100
+        orientation: 'horizontal'
+        padding: 5
+        spacing: 75
+        size_hint: (1, None)
+        Button:
+            text: 'Save'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                carousel = root.parent.parent
+                carousel.load_slide(carousel.slides[1])
+
+
+        Button:
+            text: 'Train'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                camera.train=True
+
+    BoxLayout:
+
+        size_hint_y:None
+        height:'50dp'
+        Label:
+        Label:
+        Label:
+        Label:
+
+
+
+
+
+
+<TextLayout>:
+    orientation:'vertical'
+    padding:(21,21)
+    canvas.before:
+        Color:
+            rgba: 42, 36, 48, 0
+        Rectangle:
+            pos:self.pos
+            size:self.size
+    BoxLayout:
+
+        size_hint_y:None
+        height:'50dp'
+
+        Button:
+            text: '<--'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                root.parent.parent.load_previous()
+        Label:
+        Label:
+        Label:
+        Label:
+        Label:
+    Label:
+    Label:
+        id:lab
+        text:'Name'
+        font_name: 'Roboto'
+        font_size: 50
+        bold: True
+    BoxLayout:
+        size_hint_y:None
+        height:'50dp'
+        Label:
+        TextInput:
+            id:tin
+            text:''
+            multiline:False
+            background_normal:'images/src/textinput.png'
+            background_active:'images/src/textinput_active.png'
+            background_disabled_normal:'images/src/textinput_disabled.png'
+            background_disabled_active:'images/src/textinput_disabled.png'
+            font_name: 'Roboto'
+            font_size: '18sp'
+            cursor_color: 0.498, 0.549, 0.552,1.0
+            foreground_color: 0.204, 0.286, 0.369, 1.0
+            selection_color: 0.925, 0.941, 0.937, 0.5
+            padding: '16dp', '16dp'
+            halign:'justify'
+            border: 10,10,10,10
+        Label:
+    Label:
+    BoxLayout:
+        size_hint_y:None
+        height:'50dp'
+        Label:
+        Button:
+            id:btn
+            text:'Sure'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                carousel = root.parent.parent
+                carousel.load_slide(carousel.slides[0])
+                carousel.slides[0].ids.camera.save=True
+                carousel.slides[0].ids.camera.sure()
+        Label:
+    Label:
+    Label:
+    Label:
+<ScrollView>:
+    canvas:
+        Color:
+            rgb: 0, 0, 0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+
+
+<GridLayout>:
+    canvas:
+        Color:
+            rgb: 0, 0, 0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        height: 100
+        orientation: 'horizontal'
+        padding: 5
+        spacing: 75
+        size_hint: (1, None)
+        Button:
+            text: '<--'
+            background_normal:'images/src/but_purple.png'
+            background_down:'images/src/but_purple_down.png'
+            border: (2, 2, 2, 2)
+            font_name: 'Roboto'
+            font_size: 50
+            bold: True
+            on_release:
+                carousel = root.parent.parent.parent
+                carousel.load_slide(carousel.slides[0])
+        Label:
+        Label:
+    BoxLayout:
+        height: 100
+        orientation: 'horizontal'
+
+        size_hint: (1, None)
+        Label:
+            text:'name'
+            font_name: 'Roboto'
+            font_size: 20
+            bold: True
+        Label:
+            text:'work'
+            font_name: 'Roboto'
+            font_size: 20
+            bold: True
+        Label:
+            text:'bussinesstrip'
+            font_name: 'Roboto'
+            font_size: 17
+            bold: True
+        Label:
+            text:'leave'
+            font_name: 'Roboto'
+            font_size: 20
+            bold: True
+        Label:
+            text:'overtime'
+            font_name: 'Roboto'
+            font_size: 20
+            bold: True
+<TableRow>:
+    size_hint: 1, None
+    size: self.width, 25
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<TableCell>:
+    font_size: 12
+    size_hint: 1, 1 # TODO: column.size_x, 1
+    hint_text: self.column.hint_text
+    multiline: False
+    write_tab: False
+    # TODO read BorderImage doc for border values
+    border: 1, 2, 1, 2
